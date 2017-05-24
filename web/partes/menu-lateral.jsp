@@ -33,15 +33,15 @@
             <li class="header">MENU DE NAVEGAÇÃO</li>
             <li class="active treeview " >
                 <a style="border-left-color: #f00" href="#">
-                    <i class="fa fa-arrow-circle-down" style="color: #f00"></i> <span>Despesas</span>
+                    <i class="fa fa-arrow-circle-down" style="color: #f00"></i> <span>Ação</span>
                     <span class="pull-right-container">
                         <i class="fa fa-angle-left pull-right"></i>
                     </span>
                 </a>
                 <ul id="treeview-menu" class="treeview-menu">
-                    <li><a href="areas.jsp"><i class="fa fa-angle-right"></i>Áreas</a></li>
-                    <li><a href="entrada-despesa.jsp"><i class="fa fa-angle-right"></i>Entrada de Despesas</a></li>
-                    <li><a href="buscar-despesa.jsp"><i class="fa fa-angle-right"></i>Buscar Despesas</a></li>
+                    <li><a href="areas.jsp"><i class="fa fa-angle-right"></i>Cadastro</a></li>
+                    <li><a href="entrada-despesa.jsp"><i class="fa fa-angle-right"></i>Alteração</a></li>
+                    <li><a href="buscar-despesa.jsp"><i class="fa fa-angle-right"></i></a></li>
 
                 </ul>
             </li>
