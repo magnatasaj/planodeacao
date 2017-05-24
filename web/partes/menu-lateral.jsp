@@ -1,6 +1,7 @@
 <%
     App app = (App)request.getSession().getAttribute("app");
-    %>
+    
+%>
 <%@page import="com.interativaconsultoria.objetos.App"%>
 <%@page import="java.util.Properties"%>
 <%@page import="com.interativaconsultoria.dao.Propriedade"%>

@@ -17,9 +17,9 @@ public class Propriedade {
 
     public static void setprop() {
         
-        props.setProperty("prop.db", "fininter_sistema");
-        props.setProperty("prop.user", "fininter");
-        props.setProperty("prop.senha", "FiNt7E766@I");
+        props.setProperty("prop.db", "sishistorico");
+        props.setProperty("prop.user", "root");
+        props.setProperty("prop.senha", "semanaacademica");
         props.setProperty("prop.host", "127.0.0.1");
         props.setProperty("prop.porta", "3306");
     }
