@@ -25,21 +25,7 @@
 <%@include file="partes/meta-data.jsp" %>   
 <%@include file="/partes/javascript.jsp" %> 
 <script src="dist/js/FeedEk.js" type="text/javascript"></script>
-    <script type="text/javascript">
-  $(document).ready(function () {
-            $('#divRss').FeedEk({
-                FeedUrl: 'http://interativaconsultoria.com/feed/',
-                MaxCount: 3
-            });
-        })
-    </script>
-    <style>
-        .l{
-          float: left;
-          width: 30%;
-          text-align: justify;
-        }
-    </style>    
+     
         
 
 <!-- #Meta-data ------------------------------------------------------------------------------------------------->
@@ -170,7 +156,6 @@ function ocultar(){
 
     </header>
 </div>
-<div id="divRss"></div>
 
 </body>
 

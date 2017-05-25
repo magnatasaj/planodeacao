@@ -34,7 +34,7 @@ public class DaoUser {
 
     public void Aluno_Salvar(User al) throws SQLException, ClassNotFoundException {
 
-        String sql = "INSERT INTO " + tbp + "alunos (`id`, `nome`, `email`, `senha`, `tipo`) VALUES (NULL, ?, ?, ?,?)";
+        String sql = "INSERT INTO " + tbp + "usuarios (`id`, `nome`, `email`, `senha`, `tipo`) VALUES (NULL, ?, ?, ?,?)";
         ps = conexao.prepareStatement(sql);
         ps.setString(1, al.getNome());
         ps.setString(2, al.getEmail());
@@ -47,7 +47,7 @@ public class DaoUser {
     
     public void Aluno_atualizar(User al) throws SQLException, ClassNotFoundException {
 
-        String sql = "UPDATE " + tbp + "alunos SET `nome` = ?, `email` = ?, `senha` = ?, `tipo` = ? WHERE " + tbp + "alunos.id = ?;";
+        String sql = "UPDATE " + tbp + "usuarios SET `nome` = ?, `email` = ?, `senha` = ?, `tipo` = ? WHERE " + tbp + "usuarios.id = ?;";
         ps = conexao.prepareStatement(sql);
         ps.setString(1, al.getNome());
         ps.setString(2, al.getEmail());
@@ -61,7 +61,7 @@ public class DaoUser {
     
      public void Aluno_excluir(int id) throws SQLException, ClassNotFoundException {
 
-        String sql = "DELETE FROM " + tbp + "alunos WHERE " + tbp + "alunos.id = ?";
+        String sql = "DELETE FROM " + tbp + "usuarios WHERE " + tbp + "usuarios.id = ?";
         ps = conexao.prepareStatement(sql);
        
         ps.setInt(1, id);
@@ -71,8 +71,8 @@ public class DaoUser {
 
     public List<User> Aluno_Listar() throws SQLException, ClassNotFoundException {
 
-        String sql = "SELECT * FROM " + tbp + "alunos";
-        List<User> alunos = new ArrayList();
+        String sql = "SELECT * FROM " + tbp + "usuarios";
+        List<User> usuarios = new ArrayList();
         ps = conexao.prepareStatement(sql);
         ResultSet rs = ps.executeQuery();
         while (rs.next()) {
@@ -82,16 +82,16 @@ public class DaoUser {
             us.setSenha(rs.getString("senha"));
             us.setEmail(rs.getString("email"));
             us.setTipo(rs.getInt("tipo"));
-            alunos.add(us);
+            usuarios.add(us);
 
         }
         ps.close();
-        return alunos;
+        return usuarios;
     }
 
     public User Obj_Aluno(String id) throws SQLException {
 
-        String sql = "SELECT * FROM `" + tbp + "alunos` WHERE `id` = '" + id + "'";
+        String sql = "SELECT * FROM `" + tbp + "usuarios` WHERE `id` = '" + id + "'";
         ps = conexao.prepareStatement(sql);
         rs = ps.executeQuery();
         User us = new User();

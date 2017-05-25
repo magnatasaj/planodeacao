@@ -49,13 +49,13 @@
             <li class="active treeview">
                 <a style="border-left-color: green" href="#">
                     <i class="fa fa-arrow-circle-up" style="color: green"></i>
-                    <span>Receita</span>
+                    <span>Reunião</span>
                     <span class="pull-right-container">
                         <i class="fa fa-angle-left pull-right"></i>
                     </span>
                 </a>
                 <ul id="treeview-menu" class="treeview-menu">
-                    <li><a href="entrada-receita.jsp"><i class="fa fa-angle-right"></i>Entrada de Receita</a></li>
+                    <li><a href="add_reuniao.jsp"><i class="fa fa-angle-right"></i>Criar</a></li>
                     <li><a href="buscar-receita.jsp"><i class="fa fa-angle-right"></i>Buscar Receita</a></li>
 
                 </ul>

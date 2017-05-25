@@ -31,7 +31,7 @@ public class DaoLogin {
 
     public int Consultar_Login(String email, String senha) throws SQLException {
 
-        String sql = "SELECT * FROM `"+tbp+"alunos` WHERE `email` = '" + email + "' AND `senha` = '" + senha + "' ";
+        String sql = "SELECT * FROM `"+tbp+"usuarios` WHERE `email` = '" + email + "' AND `senha` = '" + senha + "' ";
         ps = conexao.prepareStatement(sql);
         rs = ps.executeQuery();
         int id = 0;
@@ -44,7 +44,7 @@ public class DaoLogin {
 
     public boolean Consultar_Email(String email) throws SQLException {
 
-        String sql = "SELECT * FROM `"+tbp+"alunos` WHERE `email` = '" + email + "'";
+        String sql ="SELECT * FROM `"+tbp+"usuarios` WHERE `email` = '" + email + "'";
         ps = conexao.prepareStatement(sql);
         rs = ps.executeQuery();
 
@@ -53,7 +53,7 @@ public class DaoLogin {
 
     public boolean Consultar_cpf(String cpf) throws SQLException {
 
-        String sql = "SELECT * FROM `"+tbp+"alunos` WHERE `cpf` = '" + cpf + "'";
+        String sql = "SELECT * FROM `"+tbp+"usuarios` WHERE `cpf` = '" + cpf + "'";
         ps = conexao.prepareStatement(sql);
         rs = ps.executeQuery();
 

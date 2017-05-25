@@ -17,7 +17,7 @@ public class Propriedade {
 
     public static void setprop() {
         
-        props.setProperty("prop.db", "sishistorico");
+        props.setProperty("prop.db", "planodeacao");
         props.setProperty("prop.user", "root");
         props.setProperty("prop.senha", "semanaacademica");
         props.setProperty("prop.host", "127.0.0.1");
